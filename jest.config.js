@@ -4,6 +4,7 @@ module.exports = {
     'node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|@walletconnect/.*)',
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  snapshotSerializers: ['jest-expo/build/serializers'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}', 'chaos/**/*.ts', '!src/**/*.d.ts', '!src/**/index.ts'],
   testMatch: ['**/__tests__/**/*.(test|spec).[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
   modulePathIgnorePatterns: ['<rootDir>/e2e'],
